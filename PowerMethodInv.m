@@ -1,6 +1,6 @@
 function [x] = PowerMethodInv(A, x0, tolerance)
 Iteration = 0;
-x_prev = linsolve(A, x0);
+x_prev = x0;
 success = 0;
 for k=1:100    
     disp(['Power iteration ' int2str(k) ':']);
